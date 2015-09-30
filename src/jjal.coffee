@@ -12,7 +12,7 @@
 #   아아아아
 #   hubot 아버지 - castis hubot의 아버지
 #   의미없다
-#
+#   야근  아이유가 하라면 해
 
 module.exports = (robot) ->
     robot.hear /좌절/, (msg) ->
@@ -26,3 +26,5 @@ module.exports = (robot) ->
 
     robot.hear /의미 *없[다|군|네|음]/, (msg) ->
         msg.send "http://i.imgur.com/2GiXizJ.png"
+    robot.hear /야근/ , (msg)->
+        msg.send "http://i.imgur.com/8biDamW.jpg"
